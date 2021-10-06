@@ -1,29 +1,18 @@
 import React from "react";
-export default function App(){
-  const [name,setName]=React.useState("")
-const raafat =()=>{
-alert(`hello ${name}`);
- 
-};
+import Counter from "./components/counter";
+import Header from "./components/header";
 
-
-const Submit =(event)=>{
-  setName (event.target.value);
-
-}
+export default function App() {
 
   return (
-  <><h1>Greetings</h1><form onSubmit={raafat}>
+    <><Header link="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGlly-WC6mU0q6iszakSM6hYFJR4RPhzUxET_WMTmSyFfKDuUnkhvVdWse7zvsjPIWxa0&usqp=CAU" />
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jofNR_WkoCE" title="YouTube video player" frameborder="0" style={{ "justify-content": "center" }} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <Counter />
+      </div>
+        <footer style={{ position: "fixed", bottom: "0px" }}>
+        Copyright &#169; Mohamed ELdakar
+      </footer></>
 
-      <label>
-        Name:
-        <input onChange={Submit} type="text" name="name" defaultValue={name}/>
-      </label>
-      <input type="submit" value="Submit" />
-    </form> 
-    <br/>
-  
-    <img src="https://media.istockphoto.com/photos/social-network-concept-picture-id1281414200?s=612x612"/>
-    </>
-    )
-} 
+  )
+}
