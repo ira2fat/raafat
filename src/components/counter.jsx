@@ -15,8 +15,9 @@ function Counter() {
         }
     }
     return (<>
-        <br /><span>{counter}</span>
+       <span style={{color:'blue',fontSize:40, display:'inline-block',border: '2px solid black'}}>{counter}</span>
 
+       <br/>
         <button onClick={increment}>
             up
         </button>
