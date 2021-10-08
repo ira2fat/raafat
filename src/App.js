@@ -1,24 +1,24 @@
 import React from "react";
 import Counter from "./components/counter";
 import Header from "./components/header";
-import Video from "./video";
-
+import Video from "./components/video";
+import Comment from "./components/comment";
+import 'typeface-roboto';
+import './cssfiles/footer.css';
+import './cssfiles/header.css';
 export default function App() {
 
   return (
     <><Header link="https://t4.ftcdn.net/jpg/02/76/08/07/360_F_276080724_hltnCyDjcqAyRtLzDYo3T2jXbBtCD7fl.jpg" />
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+      <div className='div' >
         <Video />
 
-
-
-
-
       </div>
-      <div style ={{display:'flex',justifyContent:'center',alignItems:'center',height:'30vh'}}>
+      <Comment/>
+      <div className='counter' >
         <Counter />
       </div>
-      <footer style={{ position: "fixed", bottom: "0px", fontSize: "large" }}>
+      <footer className='footer'>
         Copyright &#169; Bosch.IO
       </footer></>
 

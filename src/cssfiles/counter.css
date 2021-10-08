@@ -1,0 +1,13 @@
+.counter{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height: 30vh;
+}
+.span{
+    color:blue;
+    font-size: 40;
+     display:inline-block;
+     border: 2px solid black;
+}

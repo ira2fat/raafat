@@ -1,5 +1,5 @@
 import React from "react"
-
+import '../cssfiles/counter.css'
 
 function Counter() {
 
@@ -15,7 +15,7 @@ function Counter() {
         }
     }
     return (<>
-       <span style={{color:'blue',fontSize:40, display:'inline-block',border: '2px solid black'}}>{counter}</span>
+       <span className='span'>{counter}</span>
 
        <br/>
         <button onClick={increment}>
