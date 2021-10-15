@@ -6,5 +6,3 @@ return(
 )
 }
 export default  Video
-
-

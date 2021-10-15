@@ -1,5 +1,6 @@
 import React from "react"
 import '../cssfiles/counter.css'
+import Button from '@material-ui/core/Button';
 
 function Counter() {
 
@@ -7,7 +8,6 @@ function Counter() {
 
     const increment = () => {
         setCounter(++counter)
-
     }
     const decrement = () => {
         if (counter > 0) {
@@ -16,13 +16,13 @@ function Counter() {
     }
     return (<>
        <span className='span'>{counter}</span>
-
+       
        <br/>
-        <button onClick={increment}>
+        <Button variant="contained" color="secondary" size="small" onClick={increment}>
             up
-        </button>
-        <button onClick={decrement}>
+        </Button>
+        <Button variant="contained" color="secondary"  size="small"onClick={decrement}>
             down
-        </button></>)
+        </Button></>)
 }
 export default Counter
