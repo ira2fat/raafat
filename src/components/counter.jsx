@@ -1,6 +1,8 @@
 import React from "react"
 import '../cssfiles/counter.css'
-import Button from '@material-ui/core/Button';
+import { ArrowUpwardOutlined } from "@material-ui/icons";
+import { ArrowDownwardOutlined } from "@material-ui/icons";
+
 
 function Counter() {
 
@@ -18,11 +20,11 @@ function Counter() {
        <span className='span'>{counter}</span>
        
        <br/>
-        <Button variant="contained" color="secondary" size="small" onClick={increment}>
+        <ArrowUpwardOutlined variant ="contained" size="small" onClick={increment}>
             up
-        </Button>
-        <Button variant="contained" color="secondary"  size="small"onClick={decrement}>
+        </ArrowUpwardOutlined>
+        <ArrowDownwardOutlined variant ="contained"size ="small "onClick={decrement}>
             down
-        </Button></>)
+        </ArrowDownwardOutlined></>)
 }
 export default Counter
