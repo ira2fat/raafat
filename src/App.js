@@ -10,17 +10,18 @@ import './cssfiles/comment.css';
 export default function App() {
 
   return (
-    <><Header link="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREwVpQzae9C6HQ1OTVZ_Pe4n_zYkzxxJIX0w&usqp=CAU" />
-      <div className='div' >
-        <Video />
+    <div style={{textAlign:'center'}}>
+      
+        <Header link="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREwVpQzae9C6HQ1OTVZ_Pe4n_zYkzxxJIX0w&usqp=CAU" style={{height:'20px'}} />
+        <div>
+      <Video style={{ width:'700px' }}  />
+      <Comment />
+      <Counter className='counter' />
       </div>
-        <Comment />
-      <div className='counter'>
-        <Counter className='counter' />
-      </div>
-      <footer className='footer'>
-        Copyright &#169; Bosch.IO
-      </footer></>
+        <footer className='footer'>
+          Copyright &#169; Bosch.IO
+        </footer>
+    </div>
 
   )
 }

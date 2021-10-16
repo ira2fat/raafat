@@ -5,7 +5,7 @@ function Header(props) {
   let link = props.link;
   return (
     <div className="Header" >
-      <img src={link} alt="Hamada" className='header'/>
+      <img src={link} alt="header" className='header'/>
     </div>
   )
 }
