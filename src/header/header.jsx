@@ -1,6 +1,5 @@
 import React from 'react'
-import'../cssfiles/header.css'
-
+import './header.css'
 function Header(props) {
   let link = props.link;
   return (
